@@ -8,5 +8,5 @@ WORKDIR /var/www/html
 RUN unzip health.zip
 RUN cp -rvf health/* .
 RUN rm -rf health health.zip
-CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
+CMD ["/usr/sbin/httpd", "-D",  "FOREGROUND"]
 EXPOSE 80
